@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_240sdp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/ic_baseline_image_24"
+                android:contentDescription="@string/tv_show_poster" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVoteAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:text="8.8"
+                android:background="@drawable/circle_view" />
+        </FrameLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pbLoading"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="center"
+            tools:text="Tv show Title "
+            android:textStyle="bold"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEpisodeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="center"
+            tools:text="@string/episode_number"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp"/>
+
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_gravity="center_horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_simple_text_border"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            android:text="@string/overview"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            tools:text="overview text"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            android:text="@string/network"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_simple_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            android:text="@string/casts"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCasts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_simple_image_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:autoLink="all"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_5sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold|italic"
+            tools:text="@string/home_page_Link" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            android:text="@string/recommendations"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"/>
+
+<!--        <include
+            android:id="@+id/recommendationsState"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            layout="@layout/layout_recommendation" />-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSimilar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            android:text="@string/similar"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"/>
+
+<!--        <include
+            android:id="@+id/similarState"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            layout="@layout/layout_recommendation" />-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

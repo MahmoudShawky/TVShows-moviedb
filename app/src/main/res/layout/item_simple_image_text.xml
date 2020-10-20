@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayout"
+    android:layout_width="@dimen/_72sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_baseline_image_24"
+            android:contentDescription="@string/tv_show_poster" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10ssp"
+            tools:text="Text Name" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

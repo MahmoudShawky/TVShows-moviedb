@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main.xml"
+    app:startDestination="@id/latestTvShowsFragment">
+
+    <fragment
+        android:id="@+id/latestTvShowsFragment"
+        android:name="eg.mahmoudshawky.theAir.ui.latestTvShows.LatestTvShowsFragment"
+        android:label="latest_tv_shows_fragment"
+        tools:layout="@layout/fragment_latest_tv_shows" >
+        <action
+            android:id="@+id/action_latestTvShowsFragment_to_tvShowDetailsFragment"
+            app:destination="@id/tvShowDetailsFragment" />
+        <argument
+            android:name="tvShowId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="fetchType"
+            app:argType="eg.mahmoudshawky.theAir.utils.FetchType"
+            android:defaultValue="LATEST" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tvShowDetailsFragment"
+        android:name="eg.mahmoudshawky.theAir.ui.details.TvShowDetailsFragment"
+        android:label="TvShowDetailsFragment" >
+        <argument
+            android:name="tvShow"
+            app:argType="eg.mahmoudshawky.theAir.data.models.entity.TvShow" />
+        <action
+            android:id="@+id/action_tvShowDetailsFragment_to_latestTvShowsFragment"
+            app:destination="@id/latestTvShowsFragment" />
+    </fragment>
+
+</navigation>
