@@ -1,6 +1,5 @@
-# METAR
-Android METAR is a format for reporting weather information. A METAR weather report is predominantly used by aircraft pilots, and by meteorologists,
-who use aggregated METAR information to assist in weather forecasting using the US NOAA service.
+# TVShows-moviedb
+Android TVShows-moviedb is a minimalist android TV Shows application built on top of TMDb API
 
 **Introduction**
 This application uses pure Java, Android Jetpack and Google official libraries only.
@@ -12,7 +11,7 @@ This project uses the Gradle build system. To build this project, use the `gradl
 Application implemented based on MVVM pattern and repository pattern.
 [MVVM](https://developer.android.com/jetpack/guide#recommended-app-arch): (Model-View-ViewModel) pattern helps to completely separate the business and presentation logic from the UI, and the business logic and UI can be clearly separated for easier testing and easier maintenance.
 
-<img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/architecture.png">
+<img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/architecture.png">
 
 # Used Libraries
 [Architecture](https://developer.android.com/jetpack/arch/) - A collection of libraries that help you design robust, testable, and maintainable apps. Start with classes for managing your UI component lifecycle and handling data persistence.
@@ -23,7 +22,6 @@ Application implemented based on MVVM pattern and repository pattern.
  - [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/)  - Handle everything needed for in-app navigation.
  - [Room](https://developer.android.com/topic/libraries/architecture/room)  - Access your app's SQLite database with in-app objects and compile-time checks.
  - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)  - Store UI-related data that isn't destroyed on app rotations. Easily schedule asynchronous tasks for optimal execution.
- - [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager)  - Manage your Android background jobs.
 
 [UI](): User Interface
  - [activity](https://developer.android.com/jetpack/androidx/releases/activity)- Access composable APIs built on top of Activity.
@@ -33,16 +31,15 @@ Application implemented based on MVVM pattern and repository pattern.
 
 [Dependency injection](https://developer.android.com/training/dependency-injection) - is a technique in which an object receives other objects that it depends on.
 
- - [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)- Hilt is a dependency injection library for Android that extends the functionality of Dagger Hilt to enable dependency injection of certain classes from the androidx libraries, reduces the boilerplate of doing manual dependency injection in the project.
+ - [Koin](https://insert-koin.io/)- A pragmatic lightweight dependency injection framework for Kotlin developers.
+      Written in pure Kotlin, using functional resolution only: no proxy, no code generation, no reflection..
  
+[Kotlin coroutines](https://developer.android.com/kotlin/coroutines)
+ [Unit Testing]
  
 # Screenshots
-<img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/1.png"> <img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/2.png"> <img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/3.png"> <img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/4.png"> <img src="https://github.com/MahmoudShawky/NOAA_METAR/blob/master/screenshots/5.png">
+<img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/1.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/2.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/3.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/4.png"> 
 
 # APK
-  [**Download APK**](https://github.com/MahmoudShawky/METAR/blob/master/screenshots/MS_METAR_1.0.0.apk)
-
-# License
-Copyright [2020] [Mahmoud Shawky] Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  [**Download APK (Latest TV Moves)**](https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/TheAir_debug_1.0.0_latest.apk)
+  [**Download APK (Popular TV Moves)**](https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/TheAir_debug_1.0.0_popular.apk)
