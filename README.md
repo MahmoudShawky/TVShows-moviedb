@@ -35,7 +35,8 @@ Application implemented based on MVVM pattern and repository pattern.
       Written in pure Kotlin, using functional resolution only: no proxy, no code generation, no reflection..
  
 [Kotlin coroutines](https://developer.android.com/kotlin/coroutines)
- [Unit Testing]
+
+[Unit Testing](https://developer.android.com/training/testing)
  
 # Screenshots
 <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/1.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/2.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/3.png"> <img src="https://github.com/MahmoudShawky/TVShows-moviedb/blob/master/screenshots/4.png"> 
